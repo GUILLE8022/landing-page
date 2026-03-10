@@ -238,3 +238,39 @@ transition:var(--transition);
 transform:scale(1.03);
 
 }
+/* =========================
+FEATURE
+========================= */
+
+section[aria-labelledby="feature-title"] article{
+
+display:flex;
+gap:40px;
+
+max-width:var(--max-width);
+margin:auto;
+padding:var(--spacing-lg);
+
+align-items:center;
+
+}
+
+section[aria-labelledby="feature-title"] div{
+
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+section[aria-labelledby="feature-title"] article{
+
+flex-direction:column;
+
+}
+
+}
