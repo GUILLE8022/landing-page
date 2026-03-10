@@ -274,3 +274,29 @@ flex-direction:column;
 }
 
 }
+/* =========================
+SIDEBAR
+========================= */
+
+aside{
+
+max-width:var(--max-width);
+margin:auto;
+padding:var(--spacing-lg);
+
+}
+
+aside article{
+
+display:flex;
+gap:15px;
+margin-bottom:20px;
+align-items:center;
+
+}
+
+aside img{
+
+width:120px;
+
+}
