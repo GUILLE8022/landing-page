@@ -124,5 +124,40 @@ header ul{
 flex-direction:column;
 align-items:center;
 }
+/* =========================
+HERO
+========================= */
+
+main section:first-child figure{
+position:relative;
+}
+
+main section:first-child figcaption{
+position:absolute;
+bottom:20px;
+left:20px;
+background:rgba(0,0,0,0.6);
+color:white;
+padding:20px;
+border-radius:var(--radius);
+max-width:400px;
+}
+
+main section:first-child h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+main section:first-child figcaption{
+position:static;
+background:black;
+margin-top:10px;
+}
+
+}
 
 }
