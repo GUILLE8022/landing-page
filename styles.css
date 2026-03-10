@@ -206,3 +206,35 @@ section[aria-labelledby="dealer-title"] p{
 margin:15px 0;
 
 }
+/* =========================
+DISCOVER
+========================= */
+
+.discover-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+max-width:var(--max-width);
+margin:auto;
+padding:var(--spacing-lg);
+
+}
+
+.discover-grid article{
+
+background:white;
+padding:15px;
+border-radius:var(--radius);
+text-align:center;
+
+transition:var(--transition);
+
+}
+
+.discover-grid article:hover{
+
+transform:scale(1.03);
+
+}
