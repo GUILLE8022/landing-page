@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden; /* 🔥 evita scroll lateral */
+}
+
 body {
   background: var(--secondary-color);
   color: var(--text-color);
@@ -26,6 +30,7 @@ body {
 
 img {
   width: 100%;
+  max-width: 100%;
   display: block;
   object-fit: cover;
 }
@@ -67,7 +72,8 @@ header nav {
   justify-content: space-between;
   max-width: 1400px;
   margin: auto;
-  padding: 12px 30px;
+  padding: 12px 20px; /* 🔥 ajustado */
+  width: 100%;
 }
 
 .logo img {
@@ -79,6 +85,7 @@ header nav {
   gap: 40px;
   font-size: 13px;
   letter-spacing: 1px;
+  flex-wrap: wrap; /* 🔥 evita desbordes */
 }
 
 .nav-icons {
@@ -131,6 +138,8 @@ h2 {
 
 .products-grid img {
   height: 220px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* DESCUBRIR */
@@ -161,6 +170,7 @@ h2 {
   display: flex;
   gap: 40px;
   align-items: center;
+  flex-wrap: wrap; /* 🔥 evita overflow */
 }
 
 .feature img {
@@ -187,7 +197,7 @@ h2 {
 aside {
   max-width: var(--max-width);
   margin: auto;
-  padding: 40px;
+  padding: 40px 20px;
 }
 
 aside article {
@@ -195,6 +205,7 @@ aside article {
   gap: 15px;
   margin-bottom: 20px;
   align-items: center;
+  flex-wrap: wrap; /* 🔥 evita desbordes */
 }
 
 aside img {
@@ -207,7 +218,7 @@ aside img {
 footer {
   background: black;
   color: white;
-  padding: 40px;
+  padding: 40px 20px;
 }
 
 footer ul {
@@ -219,8 +230,7 @@ footer ul {
 /* HERO */
 
 .hero {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%; /* 🔥 corregido */
 }
 
 .hero img {
